@@ -1,0 +1,51 @@
+Algoritmo "menu lanchonete"
+//  
+//  
+Var
+
+item: inteiro
+deseja : caractere,
+operacao : CARACTERE
+totalpedido: real
+Inicio
+
+
+
+escreval()
+  totalpedido <- 0.0
+
+repita
+escreval (" opção 1: uma x-salada")
+escreval ("opção 2: um x-bacon")
+escreval ("opção 3: um x-egg")
+escreval ("opção 4: um refrigerante")
+escreval ("opção 5: finalizar pedido")
+escreval (" selecione o que deseja comer: ")
+leia (deseja)
+
+escolha (deseja)
+
+caso "1"
+    escreval(" uma x-salada custa 30 reais")
+    totalpedido <- totalpedido + 30
+caso "2"
+    escreval("um x-bacon custa 35 reais")
+    totalpedido <- totalpedido + 35
+caso "3"
+   escreval(" um x-egg custa 20 reais")
+    totalpedido <- totalpedido + 20
+caso "4"
+   escreval(" um refrigerante custa 10 reais")
+    totalpedido <- totalpedido + 10
+caso "5"
+   escreval (" operação finalizada")
+   outrocaso
+   escreval("operação encerrada")
+fimescolha
+ate item = 5
+
+
+escreval(" o seu pedido ficara em: ", totalpedido)
+
+Fimalgoritmo
+
